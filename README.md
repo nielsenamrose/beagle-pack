@@ -1,5 +1,5 @@
 # beagle-pack
-
+![Photo of the hardware](beagle-pack.JPG)
 ## Configure BeagleBone
 
 Updated image to Debian 10.3 using eMMC IoT Flasher from https://beagleboard.org/latest-images
