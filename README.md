@@ -15,3 +15,10 @@ $ connmanctl services
 *AR Wired                ethernet_88c2556c93d9_cable
 $ sudo connmanctl config ethernet_88c2556c93d9_cable --ipv4 manual 192.168.1.10 255.255.255.0 192.168.1.1
 ```
+
+## Configure gpio 113 and 111 as output
+
+```
+cd /sys/class/gpio/gpio111 && echo out > direction
+cd /sys/class/gpio/gpio113 && echo out > direction
+```
