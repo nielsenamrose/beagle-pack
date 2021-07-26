@@ -18,7 +18,28 @@ $ sudo connmanctl config ethernet_88c2556c93d9_cable --ipv4 manual 192.168.1.10 
 
 ## Configure gpio 113 and 111 as output
 
+See [pinout](https://seeeddoc.github.io/BeagleBone_Green/)
+
+Anode is connected to GPIO_20
+
+Red catode is connected to GPIO_49
+Green catode is connected to GPIO_117
+
+By default the GPIOs are configured active low
+
+Set anode high
 ```
-cd /sys/class/gpio/gpio111 && echo out > direction
-cd /sys/class/gpio/gpio113 && echo out > direction
+cd /sys/class/gpio/gpio20 && echo out > direction && echo 0 > value
+```
+
+Turn led on (both red and green)
+```
+cd /sys/class/gpio/gpio49 && echo out > direction && echo 1 > value
+cd /sys/class/gpio/gpio117 && echo out > direction && echo 1 > value
+```
+
+Turn led off (both red and green)
+```
+cd /sys/class/gpio/gpio49 && echo out > direction && && echo 0 > value
+cd /sys/class/gpio/gpio117 && echo out > direction && echo 0 > value
 ```
