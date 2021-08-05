@@ -14,6 +14,7 @@ Connect BBG via USB. Connect to `192.168.7.2`
 $ connmanctl services
 *AR Wired                ethernet_88c2556c93d9_cable
 $ sudo connmanctl config ethernet_88c2556c93d9_cable --ipv4 manual 192.168.1.10 255.255.255.0 192.168.1.1
+$ sudo connmanctl config ethernet_689e19a7b79c_cable --nameservers 8.8.8.8 4.4.4.4
 ```
 
 ## Configure gpio 113 and 111 as output
