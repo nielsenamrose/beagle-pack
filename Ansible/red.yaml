@@ -1,7 +1,7 @@
 ---
   - name: "Make leds red"
     hosts: beaglepack
-    serial: 0
+    strategy: free
     tasks:
     - name: "Set anode to output"
       copy: 

@@ -3,6 +3,7 @@
     hosts: beaglepack
     gather_facts: no
     ignore_unreachable: true
+    serial: 1
     tasks:
     - name: "Set anode to output"
       raw: echo out > /sys/class/gpio/gpio48/direction
