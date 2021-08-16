@@ -1,0 +1,35 @@
+---
+  - name: "Make leds red"
+    hosts: beaglepack
+    serial: 0
+    tasks:
+    - name: "Set anode to output"
+      copy: 
+        dest: /sys/class/gpio/gpio48/direction
+        unsafe_writes: yes
+        content: out
+    - name: "Set anode low"
+      copy: 
+        dest: /sys/class/gpio/gpio48/value
+        unsafe_writes: yes
+        content: 0
+    - name: "Set gpio65 as output"
+      copy: 
+        dest: /sys/class/gpio/gpio65/direction
+        unsafe_writes: yes
+        content: out
+    - name: "Set gpio65 high"
+      copy: 
+        dest: /sys/class/gpio/gpio65/value
+        unsafe_writes: yes
+        content: 1
+    - name: "Set gpio26 as output"
+      copy: 
+        dest: /sys/class/gpio/gpio26/direction
+        unsafe_writes: yes
+        content: out
+    - name: "set gpio26 low"
+      copy: 
+        dest: /sys/class/gpio/gpio26/value
+        unsafe_writes: yes
+        content: 0

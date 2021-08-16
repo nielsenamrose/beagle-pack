@@ -1,0 +1,18 @@
+---
+  - name: "Make leds green"
+    hosts: beaglepack
+    gather_facts: no
+    ignore_unreachable: true
+    tasks:
+    - name: "Set anode to output"
+      raw: echo out > /sys/class/gpio/gpio48/direction
+    - name: "Set anode low"
+      raw: echo 0 > /sys/class/gpio/gpio48/value
+    - name: "Set gpio65 as output"
+      raw: echo out > /sys/class/gpio/gpio65/direction
+    - name: "Set gpio65 low"
+      raw: echo 0 > /sys/class/gpio/gpio65/value
+    - name: "Set gpio26 as output"
+      raw: echo out > /sys/class/gpio/gpio26/direction
+    - name: "set gpio26 high"
+      raw: echo 1 > /sys/class/gpio/gpio26/value
