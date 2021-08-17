@@ -1,3 +1,8 @@
+# Installing Ansible
+
+Install Ansible by following these instructions
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
+
 # Installing [AWX](https://github.com/ansible/awx) 19.3.0 in Docker on vanilla Ubuntu 20.04
 
 Install Git
@@ -24,9 +29,6 @@ sudo usermod -a -G docker [user]
 newgrp docker
 ```
 Logout and login again
-
-Install Ansible by following these instructions
-https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
 
 Now follow these instructions to install AWX using Docker Compose
 https://github.com/ansible/awx/blob/devel/tools/docker-compose/README.md
