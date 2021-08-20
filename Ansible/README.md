@@ -1,7 +1,13 @@
 # Installing Ansible
 
-Install Ansible by following these instructions
-https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
+Install Ansible on Ubuntu
+
+```
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible-base
+```
 
 # Installing [AWX](https://github.com/ansible/awx) 19.3.0 in Docker on vanilla Ubuntu 20.04
 
