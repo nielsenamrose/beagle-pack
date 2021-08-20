@@ -9,7 +9,7 @@ $ sudo add-apt-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible-base
 ```
 
-# Installing [AWX](https://github.com/ansible/awx) 19.3.0 in Docker on vanilla Ubuntu 20.04
+# Installing [AWX](https://github.com/ansible/awx) 19.3.0 in Docker on Ubuntu 20.04
 
 Install Git
 ```
